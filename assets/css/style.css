@@ -1,0 +1,167 @@
+/* Set the font size and line height */
+body {
+  /* display: flex;
+  flex-wrap:wrap; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:20px;
+  
+  /* line-height: 1.5; */
+  
+}
+ /* main{
+  overflow: auto;
+} */
+
+header {
+  display: flex;
+  padding:3%;
+  align-items:center;
+  background-color: #13293d;
+  color: rgb(87, 17, 17);
+  
+}
+
+header h1{
+  flex-grow: 1;
+  justify-content: right;
+  font-size: 25px;
+}
+
+li{
+  display:flex
+}
+
+section{
+  display:flex;
+}
+
+.box2{
+  padding-left:10px;
+  padding-right:10px;
+  justify-content: space-evenly;
+}
+
+/* header h1{
+  font-size:xx-large;
+  color:blanchedalmond;
+  background-color: rgb(15, 19, 15);
+  padding:1%;
+  /* flex:2; */
+/* } */
+
+header nav ul li{
+  flex:2;
+  align-items:stretch;
+}
+
+ul li{
+  display:flex;
+  justify-content: flex-end;
+}
+
+
+footer{
+
+  color:blanchedalmond;
+  background-color: rgb(15, 19, 15);
+
+
+}
+
+
+/* 
+/* Change the heading size to 200%, give it a margin all around, and assign font family to serif */
+/* h1 {
+  margin: 2%;
+  font-size: 200%;
+  font-family: serif;
+} */
+
+/* Change header size to 180%, give it a 3% margin on top and bottom, and assign font family to serif */
+/* h2 {
+  margin: 3% 0;
+  font-size: 180%;
+  font-family: serif;
+} */
+
+/* Change header size to 150% and assign font family to serif */
+/* h3 {
+  font-size: 150%;
+  font-family: serif;
+} */
+
+/* nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+} */
+
+/* nav a {
+  color: #b9C6ae;
+  font-weight: bold;
+  text-decoration: none;
+} */
+
+/* main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 1200px;
+  margin: 2% auto;
+} */
+
+/* section {
+  flex: 1 1 0;
+  padding-right: 5%;
+} */
+
+/* article {
+  border-bottom: 1px solid #d8a47f;
+} */
+
+/* Add a margin to the top and bottom of the paragraphs */
+/* article p {
+  margin: 2% 0;
+} */
+
+/* Add a margin to indent the list, give it square bullet points, and assign font family to monospace */
+/* article ul {
+  margin-left: 5%;
+  list-style: square;
+  font-family: monospace;
+}
+
+aside {
+  width: 25%;
+} */
+
+/* input,
+button {
+  width: 100%;
+  margin: 2% 0;
+  padding: 1%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #13293d;
+  color: #fff;
+}*/
+
+@media screen and (max-width: 800px) {
+  /* header, main {
+    flex-direction: column;
+  } */
+
+  .box2 {
+    flex-direction: column;
+    text-align: center;
+    width:100%;
+  }
+
+  /* aside {
+    width: 100%;
+    text-align: center;
+  } */
+}
