@@ -268,20 +268,28 @@ p {
   display :flex;
   
   flex:row;
-  justify-content: space-around;
+  justify-content: space-between; /*ET*/
+ 
   
 }
 
-.project-row-two img{
-  width:50%;
-  border: 3px solid rgb(110, 110, 134);
-  
+.project-row-two div{
+  width:49%; /*ET*/
+  background-image: url("assets/images/project_1.jpg");
+  height:200px;
+
 }
+/* .project-row-two img{
+  width:49%; /*ET*/
+  /* border: 3px solid rgb(110, 110, 134);
+  
+} */ 
 
 .secondrow{
   background-image: url("assets/images/project_1.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover; /*ET*/
+ 
+  height:300px; /*ET*/
 }
 
 
@@ -345,15 +353,26 @@ p {
         </div>
 
         <div class="project-row-two">
-          <img src="assets/images/project_1.jpg" alt="Main project image"/> 
-          <img src="assets/images/project_1.jpg" alt="Main project image"/>
+          <div>
+
+          </div>
+          <div></div>
+          <!-- <img src="assets/images/project_1.jpg" alt="Main project image"/> -->
           <!-- <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
           <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         --> 
         </div>
 
-          <div class="project-row-two">
-            <img src="assets/images/project_1.jpg" alt="Main project image"/> 
-            <img src="assets/images/project_1.jpg" alt="Main project image"/>
+        <div class="project-row-two">
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+          <!-- <img src="assets/images/project_1.jpg" alt="Main project image"/> -->
+          <!-- <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
+          <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         --> 
+        
             <!-- <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
             <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         -->
           </div>
