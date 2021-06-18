@@ -91,7 +91,8 @@ div {
         
         padding: 10px;
         margin: 10px;
-        background: aqua;
+        /* background: aqua; */
+        line-height: 1.5em;
         
         
 		
@@ -104,19 +105,21 @@ div {
       /* Add your flexbox CSS below here */
 
 	  .ab{
-	  border-right:2px solid blue;
-	  flex:300px; /*Defining a size*/
+	  border-right:3px solid #13293d;
+	  flex:210px; /*Defining a size*/
 	  }
 
     
 
     img{
       max-width: 100%;
+      
      
     }
 
     h2{
-      font-size: 30px;
+      font-size: 40px;
+      color: #13293d;
     }
 
     header {
@@ -193,12 +196,41 @@ a{
   } */
 }
 
+p{
+  color: #13293d;
+}
+
 /*This part is working all good with the animation*/
 a:hover {
   color:burlywood;
   border-bottom:3px solid burlywood;
   text-shadow: 2px 2px 5px #bea1a1;
 }
+.cover-image{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  margin:0; /* This section can be seperately addressed*/
+  border:0; /* This section can be seperately addressed*/
+}
+
+.image-title{
+  
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 18px;
+  padding:0;
+  margin-top:15px;
+}
+
+/* div{
+  padding-top:10px;
+  margin-top:20px;
+} */
+
+
 
 /*-----------------------------------*/
       
@@ -221,67 +253,59 @@ a:hover {
   <!-- Main section with About me and my work -->
   <main>
     <!-- Cover image with subtitle -->
-    <section >
+    <div class="cover-image">
       <img src="assets/images/cover.jpg">
-    </section>
+      <!-- <h2 class="image-title">Full stack web developer</h2> --NEET TO WORK ON THIS-->
+    </div>
+    
+    <!-- About me section -->
     <section class="abb" id="about-me">
-
       <article class="ab" id="firstcover">
         <h2>About Me</h2>
-
-        </article>
+      </article>
 
       <article class="c">
-      
-
-        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-
-        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis hendrerit. Phasellus volutpat, ligula tempor tincidunt 
+          hendrerit, dui tellus faucibus felis, rhoncus malesuada tellus velit quis odio. Ut et luctus purus. Nullam eleifend, sem id 
+          semper hendrerit, dui nibh mollis neque, quis ultricies purus neque sit amet lacus.
+        </p> 
+        <p>Donec tincidunt leo at volutpat tincidunt. Etiam sagittis, enim quis euismod maximus, nisi neque condimentum sapien, et congue 
+          felis erat sit amet lorem. Gravida est dui quis sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Sed eget ipsum. Vestibulum a ante nec ipsum sodales elementum ut laoreet ante. Sed hendrerit pulvinar tortor ac
+          dapibus. Curabitur efficitur dui molestie, sodales elit in, rutrum augue.
+        </p> 
       </article>
     </section>
-	
-	 <section id="portfolio">
-
+    
+    <!-- Portfolio section -->
+    <section id="portfolio">
       <article class="ab">
         <h2>My Work</h2>
-
-        </article>
+      </article>
 
       <article class="c">
-      
         <div class="secondrow">
-          <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.
-            Cray food t</p>
-              <p>ray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch p</p>
-             
+          <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui.t</p> 
         </div>
 
-        <div> <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p></div>
-       
-        
+        <div> 
+          <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
+          <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>        
 
         <div class="secondrow" id="contact">
-          <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.
-            Cray food t</p>
-              <p>ray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch p</p>
-             
+          <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. </p>
+          <p>ray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch p</p>    
         </div>
-
-
-       
       </article>
     </section>
 	
-	 <section>
-
+    <!-- Contact me section -->
+	  <section>
       <article class="ab">
         <h2>Contact</h2>
-
-        </article>
+      </article>
 
       <article class="c">
-      
-
         <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
 
         <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
