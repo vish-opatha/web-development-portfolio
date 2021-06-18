@@ -117,6 +117,7 @@ div {
      
     }
 
+
     h2{
       font-size: 40px;
       color: #13293d;
@@ -211,11 +212,22 @@ a:hover {
   text-shadow: 2px 2px 5px #bea1a1;
 }
 .cover-image{
+  background-image: url("assets/images/cover.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   width:100%;
+  height:200px;
   margin:0; /* This section can be seperately addressed*/
   border:0; /* This section can be seperately addressed*/
+}
+
+.cover-image h2{
+  align-items: flex-end;
+  background-color: aqua;
+  padding:3px;
+  margin-left:10px;
 }
 
 .image-title{
@@ -254,6 +266,7 @@ p {
 
 .project-row-two{
   display :flex;
+  
   flex:row;
   justify-content: space-around;
   
@@ -262,7 +275,15 @@ p {
 .project-row-two img{
   width:50%;
   border: 3px solid rgb(110, 110, 134);
+  
 }
+
+.secondrow{
+  background-image: url("assets/images/project_1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 
 /*-----------------------------------*/
@@ -287,8 +308,8 @@ p {
   <main>
     <!-- Cover image with subtitle -->
     <div class="cover-image">
-      <img src="assets/images/cover.jpg">
-      <!-- <h2 class="image-title">Full stack web developer</h2> --NEET TO WORK ON THIS-->
+      <!-- <img src="assets/images/cover.jpg"> -->
+      <h2 class="image-title">Full stack web developer</h2> <!--NEET TO WORK ON THIS--> 
     </div>
     
     <!-- About me section -->
@@ -318,7 +339,7 @@ p {
 
       <article class="c">
         <div class="secondrow">
-          <img src="assets/images/project_1.jpg" alt="Main project image"/>
+          <!-- <img src="assets/images/project_1.jpg" alt="Main project image"/> -->
           <p>Horisean Marketing</p>
           <p>HTML/ CSS</p>  
         </div>
@@ -327,7 +348,7 @@ p {
           <img src="assets/images/project_1.jpg" alt="Main project image"/> 
           <img src="assets/images/project_1.jpg" alt="Main project image"/>
           <!-- <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
-          <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         -->
+          <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         --> 
         </div>
 
           <div class="project-row-two">
