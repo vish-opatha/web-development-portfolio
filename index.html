@@ -24,6 +24,9 @@
         margin: 0;
         padding:0;
         font-family:myFirstFont;
+        display:flex;
+        flex-direction: column;
+        /* flex-wrap: wrap;  */
       }
 
       
@@ -177,6 +180,8 @@ header a{
   header, main,section {
     flex-wrap:wrap;
     flex-direction: column; }
+    
+}
 
     /*ARTICLE MUST BE INCLUDED IN THE MEDIA QUERY TO THE RESPONSIVE DESIGN, BUT
     NEED TO THINK OF THE BORDER*/
@@ -194,7 +199,7 @@ header a{
     width: 100%;
     text-align: center;
   } */
-}
+
 
 p{
   color: #13293d;
@@ -205,8 +210,10 @@ a:hover {
   color:burlywood;
   border-bottom:3px solid burlywood;
   text-shadow: 2px 2px 5px #bea1a1;
+  transition: all 0.4s ease-in-out;
 }
 .cover-image{
+  
   background-image: url("assets/images/cover.jpg");
   background-size:100%;
   background-repeat: no-repeat;
