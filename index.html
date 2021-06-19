@@ -111,12 +111,7 @@ div {
 
     
 
-    img{
-      max-width: 100%;
-      
-     
-    }
-
+   
 
     h2{
       font-size: 40px;
@@ -382,6 +377,10 @@ p {
   margin-bottom:10px;
   font-size:12px;
 }
+.change_opacity:hover{
+  /* background-image:linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)); */
+  opacity: 0.8;
+}
 
 
 
@@ -409,6 +408,7 @@ p {
   <!-- Main section with About me and my work -->
   <main>
     <!-- Cover image with subtitle -->
+    
     <div class="cover-image">
       <!-- <img src="assets/images/cover.jpg"> -->
       <h2 class="image-title">Hello! I am a Full Stack Web Developer</h2> <!--NEET TO WORK ON THIS--> 
@@ -441,19 +441,19 @@ p {
 
       <article class="c">
         <!-- onclick="location.href='#';" style="cursor: pointer; -->
-        <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="secondrow">
+        <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="secondrow change_opacity">
           <!-- <img src="assets/images/project_1.jpg" alt="Main project image"/> -->
           <h3>Horisean Marketing</h3>
           <h4>HTML/ CSS</h4>  
         </div>
 
         <div class="project-row-two">
-          <div class="small" onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
+          <div class="change_opacity" onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
             <h3>Horisean Marketing</h3>
             <h4>HTML/ CSS</h4>
 
           </div>
-          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
+          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="change_opacity">
             <h3>Horisean Marketing</h3>
             <h4>HTML/ CSS</h4>
           </div>
@@ -463,11 +463,11 @@ p {
         </div>
 
         <div class="project-row-two">
-          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
+          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="change_opacity">
             <h3>Horisean Marketing</h3>
             <h4>HTML/ CSS</h4>
           </div>
-          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
+          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="change_opacity">
             <h3>Horisean Marketing</h3>
             <h4>HTML/ CSS</h4>
           </div>
