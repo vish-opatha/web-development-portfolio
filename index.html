@@ -66,7 +66,7 @@ div {
   margin: 5px;
   font-size: 18px;
   line-height: 1.5;
-  border:2px solid blueviolet;
+
 }
 
       h1 {
@@ -280,17 +280,19 @@ p {
 
 .project-row-two{
   display :flex;
-  
   flex:row;
   justify-content: space-between; /*ET*/
+  margin:0;
  
   
 }
 
 .project-row-two div{
-  width:49%; /*ET*/
+  width:45%; /*ET*/
   background-image: url("assets/images/project_1.jpg");
-  height:200px;
+  height:150px;
+  border:3px solid rgb(71, 59, 55)
+  
 
 }
 /* .project-row-two img{
@@ -301,9 +303,25 @@ p {
 
 .secondrow{
   background-image: url("assets/images/project_1.jpg");
+  
   background-size: cover; /*ET*/
- 
   height:300px; /*ET*/
+  border:3px solid rgb(71, 59, 55);
+  display :flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  line-height: 0;
+  
+  
+}
+
+
+.secondrow p{
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 15px;
+  background-color: #443417; 
+    
 }
 
 
