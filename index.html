@@ -9,34 +9,67 @@
   <link rel="stylesheet" href="./assets/css/style.css" /> -->
 </head>
 <style>
-  @font-face {
+/* Introducing custom fonts for the page*/
+ @font-face {
   font-family: myFirstFont;
-  src: url(GentiumBasic-Regular.ttf);
-}
+  src: url(assets/fonts/GentiumBasic-Regular.ttf);
+  }
+
+/* Styles for body with fonts and flexbox*/
+  body {  
+    margin: 0;
+    padding:0;
+    font-family:myFirstFont;
+    display:flex;
+    flex-direction: column;
+    color: #13293d; /*Basic color for all the text unless amended specifically*/
+    }
+
+/* Header and Navigation */
+  header {
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  }
+
+  header h1{
+    text-align: left;
+    font-size: 3rem; /*Can implement later*/
+    background-color: #443417;
+    padding-left: 40px;
+  }
+
+  header a{
+    font-size:1.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 4px solid;
+  }
+
+  header a:hover { 
+    color:burlywood;
+    border-bottom:3px solid;
+    text-shadow: 2px 2px 5px #bea1a1;
+    transition: all 0.4s ease-in-out; /* Animation when hovering over <a> in header*/
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding-right:15px;
+    display: flex;
+  }
 
 
      
 
-      body {
-       
- 
-       
-        margin: 0;
-        padding:0;
-        font-family:myFirstFont;
-        display:flex;
-        flex-direction: column;
-        /* flex-wrap: wrap;  */
-      }
-
+     
       
 
       
-	  
-	  footer{
-        background: black;
-        height: 100px;
-      }
+
 	  
 	  section {
 		display: flex; 
@@ -121,45 +154,10 @@ div {
       color: #13293d;
     }
 
-    header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  background-color: #13293d;
-  color: #fff;
-  
-  /* height:50px; */
-}
 
-header h1{
-  
-  text-align: left;
-  font-size: 45px;
-  background-color: #443417;
-  padding-left: 40px;
-  
-}
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 100px; 
-  /* <==need to have a look at this, originally 300px */
-  list-style-type: none;
-  padding-right:15px;
-  
-  
-}
 
-header a{
-  font-size:25px;
-  text-decoration: none;
-  color: #fff;
-  border-bottom: 4px solid #fff; 
 
-}
 
     /* nav ul{
         display:flex;
@@ -201,17 +199,9 @@ header a{
   } */
 
 
-p{
-  color: #13293d;
-}
 
 /*This part is working all good with the animation*/
-a:hover {
-  color:burlywood;
-  border-bottom:3px solid burlywood;
-  text-shadow: 2px 2px 5px #bea1a1;
-  transition: all 0.4s ease-in-out;
-}
+
 .cover-image{
   
   background-image: url("assets/images/cover.jpg");
@@ -404,22 +394,22 @@ p {
     <h1>Vish Opatha</h1>
     <nav>
       <ul>
+          <!--Refering to sections in the page and the link to open the resume on a new window-->
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-          <li><a href="#portfolio">Resume</a></li>
+          <li><a href="#footer">Contact Me</a></li>
+          <li><a href="assets/documents/resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav> 
   </header>
   
-  <!-- Main section with About me and my work -->
+  <!-- Main includes about me, portfolio and contact me-->
   <main>
     <!-- Cover image with subtitle -->
-    
     <div class="cover-image">
-      <!-- <img src="assets/images/cover.jpg"> -->
-      <h2 class="image-title">Hello! I am a Full Stack Web Developer</h2> <!--NEET TO WORK ON THIS--> 
+      <h2 class="image-title">Hello! I am a Full Stack Web Developer</h2> 
     </div>
+  
     
     <!-- About me section -->
     <section class="abb" id="about-me">
