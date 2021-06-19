@@ -138,7 +138,7 @@ header h1{
   
   text-align: left;
   font-size: 45px;
-  background-color: #2b333a;
+  background-color: #443417;
   padding-left: 40px;
   
 }
@@ -213,27 +213,41 @@ a:hover {
 }
 .cover-image{
   background-image: url("assets/images/cover.jpg");
-  background-size: contain;
+  background-size:100%;
   background-repeat: no-repeat;
+  
   display:flex;
-  flex-direction: row;
-  width:100%;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* width:100%; */
   height:200px;
   margin:0; /* This section can be seperately addressed*/
   border:0; /* This section can be seperately addressed*/
 }
 
 .cover-image h2{
-  align-items: flex-end;
+  /* text-align: right; */
+  font-size: 25px;
+  background-color: #443417;
+  align-self:flex-end;
+  padding:1px;
+  margin-right: 20px;
+  margin-bottom:10px;
+  color: #fff;
+  padding-left: 3px;
+  padding-bottom:3px;
+  
+  /* align-items: flex-end;
   background-color: aqua;
   padding:3px;
-  margin-left:10px;
+  margin-left:10px; */
 }
 
-.image-title{
+/* .image-title{
   
   overflow-x: hidden;
-}
+} */
 
 p {
   font-size: 18px;
@@ -308,6 +322,7 @@ p {
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#portfolio">Resume</a></li>
       </ul>
     </nav> 
   </header>
@@ -317,7 +332,7 @@ p {
     <!-- Cover image with subtitle -->
     <div class="cover-image">
       <!-- <img src="assets/images/cover.jpg"> -->
-      <h2 class="image-title">Full stack web developer</h2> <!--NEET TO WORK ON THIS--> 
+      <h2 class="image-title">Hello! I am a Full Stack Web Developer</h2> <!--NEET TO WORK ON THIS--> 
     </div>
     
     <!-- About me section -->
