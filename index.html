@@ -19,13 +19,14 @@
   body {  
     margin: 0;
     padding:0;
+    width:100%;
     font-family:myFirstFont;
     display:flex;
     flex-direction: column;
     color: #13293d; /*Basic color for all the text unless amended specifically*/
     }
 
-/* Header and Navigation */
+  /* Header and Navigation */
   header {
     padding: 1%;
     background-color: #13293d;
@@ -38,10 +39,16 @@
   header h1{
     text-align: left;
     font-size: 3rem; /*Can implement later*/
+    color: white;
     background-color: #443417;
     padding-left: 40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    line-height: 30px;
+    margin: 0;
   }
-
+  
   header a{
     font-size:1.5rem;
     text-decoration: none;
@@ -52,16 +59,63 @@
   header a:hover { 
     color:burlywood;
     border-bottom:3px solid;
-    text-shadow: 2px 2px 5px #bea1a1;
+    text-shadow: 2px 2px 5px #bea1a1; /* Add a shadow to the text*/
     transition: all 0.4s ease-in-out; /* Animation when hovering over <a> in header*/
   }
 
-  nav ul {
+  nav ul{
     list-style-type: none;
     padding-right:15px;
     display: flex;
+    justify-content:space-between; 
   }
 
+  nav li{
+    margin: 0 10px;  
+  }
+
+/* Profile and cover image section */ 
+  .cover-image{
+    background-image: url("assets/images/cover.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    height:25vh;  
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin:0; border:0; 
+  }
+
+  .cover-image h2{
+    font-size: 25px;
+    color: #fff;
+    background-color: #443417;
+    align-self:flex-end;
+    padding:1px;
+    margin-right: 30px;
+    margin-bottom:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom:3px;
+    }
+
+  /* Sections - About me, work and contact*/
+  section {
+		display: flex; 
+    flex: 1 200px;
+   	margin-left:10%;
+		margin-right:10%;
+  }
+
+  .section-title{
+	  border-right:3px solid #13293d;
+	  flex:210px;
+	}
+  
+  .section-content{
+    flex: 20 800px; 
+  }
 
      
 
@@ -71,17 +125,7 @@
       
 
 	  
-	  section {
-		display: flex; 
-    flex: 1 200px;
-    /* flex-wrap: wrap; */
-    /* flex-direction:row; */
-		
-
-		margin-left:50px;
-		margin-right:50px;
- 
-}
+	 
 
 article:nth-of-type(3) {
         flex: 3 200px;
@@ -105,25 +149,13 @@ div {
 
 }
 
-      h1 {
-        text-align: left;
-        color: white;
-        line-height: 30px;
-        margin: 0;
-        
-       
-        padding-top:10px;
-        padding-bottom:10px;
-        padding-right:10px;
-		/* flex:2; */
-      }
 	  
 	  h2{
 	  margin-top:0;
 	  text-align:right;
 	  }
 
-      article {
+      div {
         
         padding: 10px;
         margin: 10px;
@@ -134,16 +166,10 @@ div {
 		
       }
 
-      .c{
-        flex: 20 800px;
-      }
 
       /* Add your flexbox CSS below here */
 
-	  .ab{
-	  border-right:3px solid #13293d;
-	  flex:210px; /*Defining a size*/
-	  }
+	  
 
     
 
@@ -159,18 +185,8 @@ div {
 
 
 
-    /* nav ul{
-        display:flex;
-        margin: 0 -10px;
-        flex-direction:row
-       
-      } */
-    
-      nav li {
-    margin: 0 10px;
-    justify-content:space-between;
-    
-}
+   
+     
 
 /* Correctly done media querries 
 ---------------------------------*/
@@ -187,54 +203,17 @@ div {
 
  
 
-  /* .box2 {
-    flex-direction: column;
-    text-align: center;
-    width:100%;
-  } */
-
-  /* aside {
-    width: 100%;
-    text-align: center;
-  } */
+ 
 
 
 
-/*This part is working all good with the animation*/
 
-.cover-image{
-  
-  background-image: url("assets/images/cover.jpg");
-  background-size:100%;
-  background-repeat: no-repeat;
-  
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction: column;
-  justify-content: flex-end;
-  /* width:100%; */
-  height:200px;
-  margin:0; /* This section can be seperately addressed*/
-  border:0; /* This section can be seperately addressed*/
-}
-
-.cover-image h2{
-  /* text-align: right; */
-  font-size: 25px;
-  background-color: #443417;
-  align-self:flex-end;
-  padding:1px;
-  margin-right: 20px;
-  margin-bottom:10px;
-  color: #fff;
-  padding-left: 3px;
-  padding-bottom:3px;
   
   /* align-items: flex-end;
   background-color: aqua;
   padding:3px;
   margin-left:10px; */
-}
+
 
 /* .image-title{
   
@@ -247,10 +226,7 @@ p {
   margin-top:15px;
 }
 
-/* div{
-  padding-top:10px;
-  margin-top:20px;
-} */
+
 
 #footer{
   display:flex;
@@ -396,7 +372,7 @@ p {
       <ul>
           <!--Refering to sections in the page and the link to open the resume on a new window-->
           <li><a href="#about-me">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Work</a></li>
           <li><a href="#footer">Contact Me</a></li>
           <li><a href="assets/documents/resume.pdf" target="_blank">Resume</a></li>
       </ul>
@@ -405,19 +381,20 @@ p {
   
   <!-- Main includes about me, portfolio and contact me-->
   <main>
-    <!-- Cover image with subtitle -->
+    <!-- Profile and cover image with subtitle -->
+    <!-- This is a representation of profile and cover image-->
     <div class="cover-image">
       <h2 class="image-title">Hello! I am a Full Stack Web Developer</h2> 
     </div>
   
     
     <!-- About me section -->
-    <section class="abb" id="about-me">
-      <article class="ab" id="firstcover">
+    <section id="about-me">
+      <div class="section-title">
         <h2>About Me</h2>
-      </article>
+      </div>
 
-      <article class="c">
+      <div class="section-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis hendrerit. Phasellus volutpat, ligula tempor tincidunt 
           hendrerit, dui tellus faucibus felis, rhoncus malesuada tellus velit quis odio. Ut et luctus purus. Nullam eleifend, sem id 
           semper hendrerit, dui nibh mollis neque, quis ultricies purus neque sit amet lacus.
@@ -427,16 +404,16 @@ p {
           ridiculus mus. Sed eget ipsum. Vestibulum a ante nec ipsum sodales elementum ut laoreet ante. Sed hendrerit pulvinar tortor ac
           dapibus. Curabitur efficitur dui molestie, sodales elit in, rutrum augue.
         </p> 
-      </article>
+      </div>
     </section>
     
     <!-- Portfolio section -->
     <section id="portfolio">
-      <article class="ab">
-        <h2>My Work</h2>
-      </article>
+      <div class="section-title">
+        <h2>Work</h2>
+      </div>
 
-      <article class="c">
+      <div class="section-content">
         <!-- onclick="location.href='#';" style="cursor: pointer; -->
         <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="secondrow change_opacity">
           <!-- <img src="assets/images/project_1.jpg" alt="Main project image"/> -->
@@ -475,22 +452,22 @@ p {
             <!-- <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
             <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         -->
           </div>
-      </article>
+        </div>
     </section>
 	
     <!-- Contact me section -->
 	  <section>
-      <article class="ab">
+      <div class="section-title">
         <h2>Contact</h2>
-      </article>
+      </div>
 
-      <article class="c" id="footer">
+      <div class="section-content" id="footer">
         <h3>(08) 8244 8288</h3>
         <h3>vish.opatha@live.com</h3>
         <h3><a href="https://github.com/">GitHub</h3></h3>
         <h3><a href="www.linkedin.com">Linkedin</a></h3>
         <h3><a href="www.spotify.com">Spotify</a></h3>
-      </article>
+        </div>
     </section>
 
   </main>
