@@ -18,7 +18,7 @@
           <!--Refering to sections in the page and the link to open the resume on a new window-->
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#portfolio">Work</a></li>
-          <li><a href="#footer">Contact Me</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
           <li><a href="assets/documents/resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav> 
@@ -60,19 +60,20 @@
 
       <div class="section-content">
         <!-- Changing the entire div to a clickable link -->
-        <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="main-project change_opacity">
+        <div class="main-project change_opacity" onclick="location.href='https://vish-opatha.github.io/horiseon-code-refactor/';" style="cursor: pointer;" >
           <h3>Horisean Marketing</h3>
           <h4>HTML/ CSS</h4>  
         </div>
 
-        <div class="project-row-two">
-          <div class="change_opacity" onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
-            <h3>Horisean Marketing</h3>
-            <h4>HTML/ CSS</h4>
-
+        <div class="sub-project">
+          <!-- Sub project links and images are representational only -->
+          <div class="change_opacity" id="project-two" onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
+            <h3>Sample Project Two</h3>
+            <h4>HTML/ CSS/ Javascript</h4>
           </div>
-          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="change_opacity">
-            <h3>Horisean Marketing</h3>
+
+          <div class="change_opacity" id="project-three" onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
+            <h3>Sample Project Three</h3>
             <h4>HTML/ CSS</h4>
           </div>
           <!-- <img src="assets/images/project_1.jpg" alt="Main project image"/> -->
@@ -80,39 +81,33 @@
           <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         --> 
         </div>
 
-        <div class="project-row-two">
-          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="change_opacity">
-            <h3>Horisean Marketing</h3>
+        <div class="sub-project">
+          <div class="change_opacity" id="project-four" onclick="location.href='https://www.google.com/';" style="cursor: pointer;" >
+            <h3>Sample Project Four</h3>
             <h4>HTML/ CSS</h4>
           </div>
-          <div onclick="location.href='https://www.google.com/';" style="cursor: pointer;" class="change_opacity">
-            <h3>Horisean Marketing</h3>
+          <div class="change_opacity" id="project-five" onclick="location.href='https://www.google.com/';" style="cursor: pointer;" >
+            <h3>Sample Project Five</h3>
             <h4>HTML/ CSS</h4>
-          </div>
-          <!-- <img src="assets/images/project_1.jpg" alt="Main project image"/> -->
-          <!-- <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
-          <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         --> 
-        
-            <!-- <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack</p>         -->
           </div>
         </div>
     </section>
 	
     <!-- Contact me section -->
-	  <section>
+	  <footer id="contact-me">
       <div class="section-title">
         <h2>Contact</h2>
       </div>
 
+      <!-- <div class="section-content" id="footer"> -->
       <div class="section-content" id="footer">
-        <h3>(08) 8244 8288</h3>
-        <h3>vish.opatha@live.com</h3>
-        <h3><a href="https://github.com/">GitHub</h3></h3>
-        <h3><a href="www.linkedin.com">Linkedin</a></h3>
-        <h3><a href="www.spotify.com">Spotify</a></h3>
-        </div>
-    </section>
+        <p>(08) 8888 8888</p>
+        <p>vish.opatha@abc.com</p>
+        <a href="https://github.com/">GitHub</a>
+        <a href="www.linkedin.com">Linkedin</a>
+        <a href="www.spotify.com">Spotify</a>
+      </div>
+    </footer>
 
   </main>
 	

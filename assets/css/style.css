@@ -99,10 +99,10 @@
     }
 
   /* Sections - About me, work and contact*/
-  section {
+  section,footer {
 		display: flex; 
     flex: 1 200px;
-   	margin-left:10%;
+    margin-left:10%;
 		margin-right:10%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -129,8 +129,9 @@
     margin-top:5 px;
 }
 
-/* Work Section - Main project*/
+/* Work Section - Main project and sub projects*/
 .main-project{
+  color: #fff;
   margin: 0 0 1% 0;
   background-image: url("../images/project_1.jpg");
   background-size: cover; 
@@ -141,11 +142,10 @@
   justify-content:flex-end;
 } 
 
-.main-project h3,h4{
+.main-project h3,h4, .sub-project h3,h4{
   font-size: 20px;
   font-weight: 800;
   margin:0;
-  /* margin-left: 15px; */
   background-color: #443417; 
   height:30px;
   Width:200px;
@@ -154,37 +154,83 @@
   padding-right:2px
 }
 
-.main-project h4{
+.main-project h4, .sub-project h4{
   margin-bottom:10px;
   font-size:12px; 
 }
 
 /* Work Section - sub projects*/
+.sub-project{
+  display :flex;
+  flex:column;
+  justify-content: space-between; 
+  margin:0;  
+}
 
+.sub-project div{
+  color: #fff;
+  margin:0 0 1% 0;
+  width:48%; 
+  height:150px;
+  border:3px solid rgb(71, 59, 55);
+  display :flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
 
-     
+#project-two{
+  background-image: url("../images/project_2.jpg");
+}
 
-     
-      
+#project-three{
+  background-image: url("../images/project_3.jpg");
+}
 
-      
+#project-four{
+  background-image: url("../images/project_4.jpg");
+}
 
-	  
-	 
-/* 
-article:nth-of-type(3) {
-        flex: 3 200px;
-        display: flex;
-        flex-flow: column;
-      }
+#project-five{
+  background-image: url("../images/project_5.jpg");
+}
 
-      article:nth-of-type(3) div:first-child {
-  flex:1 100px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+/* When hoving over the each project section opacity is reduced */
+.change_opacity:hover{
+  opacity: 0.8;
+}
+
+/* Contact me section - footer*/
+footer div{
+  display:flex;
   justify-content: space-around;
-} */
+  color: #13293d;
+}
+
+footer .section-content{
+  justify-content: space-around;
+  align-items:center;
+}
+
+footer .section-content p{
+  font-size: 24px;
+  border-bottom:3px solid #13293d;
+}
+
+footer .section-content a{
+  font-size: 23px;
+  text-decoration: none;
+  color: #13293d;
+  border-bottom:3px solid;
+}
+
+     
+
+     
+      
+
+      
+
+
 
 	  
 	 
@@ -225,88 +271,3 @@ article:nth-of-type(3) {
 
 
 
-
-
-#footer{
-  display:flex;
-  justify-content: space-around;
-}
-
-#footer h3{
-  font-size: 24px;
-  color: #13293d;
-  border-bottom:3px solid #13293d;
-}
-
-#footer a{
-  font-size: 23px;
-  text-decoration: none;
-  color: #13293d;
-  border-bottom:3px solid #13293d;
-}
-
-.project-row-two{
-  display :flex;
-  flex:row;
-  justify-content: space-between; 
-  margin:0;
- 
-  
-}
-
-.project-row-two div{
-  margin:0 0 1% 0;
-  width:48%; /*ET*/
-  background-image: url("../images/project_1.jpg");
-  height:150px;
-  border:3px solid rgb(71, 59, 55);
-  display :flex;
-  flex-direction: column;
-  justify-content:flex-end;
-  
-
-}
-
-.project-row-two h3{
-  font-size: 20px;
-  font-weight: 800;
-  margin:0;
-  /* margin-left: 15px; */
-  background-color: #443417; 
-  height:30px;
-  Width:200px;
-   
-  padding-left:2px;
-  padding-right:2px
-
-}
-
-
-.project-row-two h4{
-  font-size: 20px;
-  font-weight: 800;
-  margin:0;
-  /* margin-left: 15px; */
-  background-color: #443417; 
-  height:30px;
-  Width:200px;
-   
-  padding-left:2px;
-  padding-right:2px; 
-}
-
-.project-row-two h4{
-  margin-bottom:10px;
-  font-size:12px;
-}
-/* .project-row-two img{
-  width:49%; /*ET*/
-  /* border: 3px solid rgb(110, 110, 134);
-  
-} */ 
-
-
-.change_opacity:hover{
-  /* background-image:linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)); */
-  opacity: 0.8;
-}
