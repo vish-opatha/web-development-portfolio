@@ -179,10 +179,10 @@
 }
 
 /*Loading sample cover images for projects*/
-#project-two{ background-image: url("../images/project_2.jpg");}
-#project-three{ background-image: url("../images/project_3.jpg");}
-#project-four{ background-image: url("../images/project_4.jpg");}
-#project-five{ background-image: url("../images/project_5.jpg");}
+#project-two{ background-image: url("../images/project_2.jpg"); background-size: cover; }
+#project-three{ background-image: url("../images/project_3.jpg"); background-size: cover; }
+#project-four{ background-image: url("../images/project_4.jpg"); background-size: cover; }
+#project-five{ background-image: url("../images/project_5.jpg"); background-size: cover; }
 
 /* When hoving over the each project section opacity is reduced */
 .change_opacity:hover{
@@ -212,36 +212,35 @@ footer .section-content a{
   color: #13293d;
   border-bottom:3px solid;
 } 
-/*--Media querries--*/
+
+/*Media querries for responsive design */
 @media screen and (max-width: 800px) {
-  
   header, body,main,section,footer,.sub-project,.section-title {
-    flex-flow:wrap column;}
+     flex-flow:wrap column;
+    }
     
-    .sub-project div{
+    .sub-project div,main{
       width:100%;
     }
  
     .section-title{
-     flex:40px;
-     border:0;
-     border-bottom:3px solid #13293d;
-     margin:0; }
+      flex:40px;
+      border:0; margin:0;
+      border-bottom:3px solid #13293d;
+    }
  
     .section-content{
-     flex: 50px;
-     margin-left: 15px;
-    } 
-   footer div{
-     flex-flow: wrap column;
-   }
+      flex: 50px;
+      margin-left: 15px;
+    }
 
-   #footer p,a{
-     margin:0;
-   }
+    footer div{
+      flex-flow: wrap column;
+    }
 
-   
-
+    #footer p,a{
+      margin:0;
+    }
 }
 
 
