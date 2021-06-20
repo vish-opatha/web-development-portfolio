@@ -8,7 +8,7 @@
   body {  
     margin: 0;
     padding:0;
-    width:100%;
+    width:100vw;
     font-family:myFirstFont;
     display:flex;
     flex-direction: column;
@@ -75,9 +75,9 @@
 /* Profile and cover image section */ 
   .cover-image{
     background-image: url("../images/cover.jpg");
-    background-size:100%;
+    background-size:100vw;
     background-repeat: no-repeat;
-    height:25vh;  
+    height:30vh;  
     display:flex;
     flex-wrap:wrap;
     flex-direction: column;
@@ -178,21 +178,11 @@
   justify-content:flex-end;
 }
 
-#project-two{
-  background-image: url("../images/project_2.jpg");
-}
-
-#project-three{
-  background-image: url("../images/project_3.jpg");
-}
-
-#project-four{
-  background-image: url("../images/project_4.jpg");
-}
-
-#project-five{
-  background-image: url("../images/project_5.jpg");
-}
+/*Loading sample cover images for projects*/
+#project-two{ background-image: url("../images/project_2.jpg");}
+#project-three{ background-image: url("../images/project_3.jpg");}
+#project-four{ background-image: url("../images/project_4.jpg");}
+#project-five{ background-image: url("../images/project_5.jpg");}
 
 /* When hoving over the each project section opacity is reduced */
 .change_opacity:hover{
@@ -221,53 +211,20 @@ footer .section-content a{
   text-decoration: none;
   color: #13293d;
   border-bottom:3px solid;
-}
-
-     
-
-     
-      
-
-      
-
-
-
-	  
-	 
-     
-	  
-
-    
-
-   
-
-    
-
-
-
-
-
-   
-     
-
-/* Correctly done media querries 
----------------------------------*/
+} 
+/*--Media querries--*/
 @media screen and (max-width: 800px) {
-  header, main,section {
+  
+  header, body,main,section,footer {
     flex-wrap:wrap;
     flex-direction: column; }
-    
+  
+   footer div{
+     flex-flow: wrap column;
+     
+   }
 }
 
-    /*ARTICLE MUST BE INCLUDED IN THE MEDIA QUERY TO THE RESPONSIVE DESIGN, BUT
-    NEED TO THINK OF THE BORDER*/
 
 
  
-
- 
-
-
-
-
-
