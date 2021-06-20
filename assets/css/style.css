@@ -215,15 +215,35 @@ footer .section-content a{
 /*--Media querries--*/
 @media screen and (max-width: 800px) {
   
-  header, body,main,section,footer {
-    flex-wrap:wrap;
-    flex-direction: column; }
-  
+  header, body,main,section,footer,.sub-project,.section-title {
+    flex-flow:wrap column;}
+    
+    .sub-project div{
+      width:100%;
+    }
+ 
+    .section-title{
+     flex:40px;
+     border:0;
+     border-bottom:3px solid #13293d;
+     margin:0; }
+ 
+    .section-content{
+     flex: 50px;
+     margin-left: 15px;
+    } 
    footer div{
      flex-flow: wrap column;
-     
    }
+
+   #footer p,a{
+     margin:0;
+   }
+
+   
+
 }
+
 
 
 
