@@ -128,7 +128,38 @@
     padding:0;
     margin-top:5 px;
 }
-  
+
+/* Work Section - Main project*/
+.main-project{
+  margin: 0 0 1% 0;
+  background-image: url("../images/project_1.jpg");
+  background-size: cover; 
+  height:300px; /*ET*/
+  border:3px solid rgb(71, 59, 55);
+  display :flex;
+  flex-direction: column;
+  justify-content:flex-end;
+} 
+
+.main-project h3,h4{
+  font-size: 20px;
+  font-weight: 800;
+  margin:0;
+  /* margin-left: 15px; */
+  background-color: #443417; 
+  height:30px;
+  Width:200px;
+   
+  padding-left:2px;
+  padding-right:2px
+}
+
+.main-project h4{
+  margin-bottom:10px;
+  font-size:12px; 
+}
+
+/* Work Section - sub projects*/
 
 
      
@@ -140,7 +171,7 @@
 
 	  
 	 
-
+/* 
 article:nth-of-type(3) {
         flex: 3 200px;
         display: flex;
@@ -153,7 +184,7 @@ article:nth-of-type(3) {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
 	  
 	 
@@ -217,14 +248,15 @@ article:nth-of-type(3) {
 .project-row-two{
   display :flex;
   flex:row;
-  justify-content: space-between; /*ET*/
+  justify-content: space-between; 
   margin:0;
  
   
 }
 
 .project-row-two div{
-  width:45%; /*ET*/
+  margin:0 0 1% 0;
+  width:48%; /*ET*/
   background-image: url("../images/project_1.jpg");
   height:150px;
   border:3px solid rgb(71, 59, 55);
@@ -273,51 +305,7 @@ article:nth-of-type(3) {
   
 } */ 
 
-.secondrow{
-  background-image: url("../images/project_1.jpg");
-  
-  background-size: cover; /*ET*/
-  height:300px; /*ET*/
-  border:3px solid rgb(71, 59, 55);
-  display :flex;
-  flex-direction: column;
-  justify-content:flex-end;
-  /* line-height: 0; */
-  
-  
-}
 
-.secondrow h3{
-  font-size: 20px;
-  font-weight: 800;
-  margin:0;
-  /* margin-left: 15px; */
-  background-color: #443417; 
-  height:30px;
-  Width:150px;
-   
-  padding-left:2px;
-  padding-right:2px; 
-}
-
-
-.secondrow h4{
-  font-size: 20px;
-  font-weight: 800;
-  margin:0;
-  /* margin-left: 15px; */
-  background-color: #443417; 
-  height:30px;
-  Width:150px;
-   
-  padding-left:2px;
-  padding-right:2px; 
-}
-
-.secondrow h4{
-  margin-bottom:10px;
-  font-size:12px;
-}
 .change_opacity:hover{
   /* background-image:linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)); */
   opacity: 0.8;
