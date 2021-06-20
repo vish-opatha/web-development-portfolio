@@ -12,7 +12,9 @@ Refer to the following links:
 ## Mock-up
 The following images show the appearance of the webpage.
 
-![Portfolio demo](.assets/images/project1.jpg)
+![Desktop View](./assets/images/mockup-desktop.png)
+
+![Responsive View](./assets/images/mockup-small.png)
 
 ## Technical Acceptance - Work Done
 1. This webpage has sample of work done by me organised into different sections and includes my name, cover image(I have not used a real profile image) and different sections including projects and contact details.

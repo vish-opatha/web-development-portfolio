@@ -201,9 +201,13 @@ footer .section-content{
   align-items:center;
 }
 
+#footer h2{
+  text-align: right;
+}
+
 footer .section-content p{
   font-size: 24px;
-  padding-top:10px;
+  padding-top:11px;
   border-bottom:3px solid #13293d;
 }
 
@@ -241,6 +245,7 @@ footer .section-content p{
     }
 
     #footer p,a{
+      padding-top:5px;
       margin:0;
     }
 }
