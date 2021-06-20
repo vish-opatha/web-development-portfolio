@@ -126,7 +126,7 @@
   .section-content p{
     font-size: 18px;
     padding:0;
-    margin-top:5 px;
+    margin-top:10px;
 }
 
 /* Work Section - Main project and sub projects*/
@@ -170,7 +170,7 @@
 .sub-project div{
   color: #fff;
   margin:0 0 1% 0;
-  width:48%; 
+  width:48.5%; 
   height:150px;
   border:3px solid rgb(71, 59, 55);
   display :flex;
@@ -203,14 +203,16 @@ footer .section-content{
 
 footer .section-content p{
   font-size: 24px;
+  
   border-bottom:3px solid #13293d;
 }
 
-footer .section-content a{
+#footer a{
   font-size: 23px;
   text-decoration: none;
   color: #13293d;
   border-bottom:3px solid;
+
 } 
 
 /*Media querries for responsive design */
