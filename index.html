@@ -6,114 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
   <title>Web Development Portfolio - Vish Opatha</title>
 </head>
 
 <body>
-  <!-- Header with navigation class="" -->
+    <header class="d-flex flex-column">
+        <div>
+            <h1>Vish Opatha</h1>
+            <ul class="nav justify-content-end">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                  <!--Refering to sections in the page and the link to open the resume on a new window-->
+                  <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-me">Contact Me</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./assets/documents/resume.pdf" target="_blank">Resume</a></li>
+              </ul>   
+        </div>
+    </header>
 
-  <header class=" container navbar navbar-dark bg-dark">
-    
-        <h1>Vish Opatha</h1>
-     
-        <ul class="nav justify-content-end">
-          <!-- <span class="navbar-toggler-icon"></span> -->
-            <!--Refering to sections in the page and the link to open the resume on a new window-->
-            <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact-me">Contact Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="./assets/documents/resume.pdf" target="_blank">Resume</a></li>
-        </ul>
+    <main>
+        <section id="about-me">
+            <div class="section-title">
+              <h2>About Me</h2>
+            </div>
       
-    </div>
-   
-  </header>
-  
-  <!-- Main includes about me, portfolio and contact me-->
-  <main>
-    <!-- Profile and cover image with subtitle -->
-    <!-- This is a representation of profile and cover image-->
-    <div class="cover-image">
-      <h2 class="image-title">Hello! I am a Full Stack Web Developer</h2> 
-    </div>
-  
-    
-    <!-- About me section -->
-    <section id="about-me">
-      <div class="section-title">
-        <h2>About Me</h2>
-      </div>
+            <div class="section-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis hendrerit. Phasellus volutpat, ligula tempor tincidunt 
+                hendrerit, dui tellus faucibus felis, rhoncus malesuada tellus velit quis odio. Ut et luctus purus. Nullam eleifend, sem id 
+                semper hendrerit, dui nibh mollis neque, quis ultricies purus neque sit amet lacus.
+              </p> 
+              <p>Donec tincidunt leo at volutpat tincidunt. Etiam sagittis, enim quis euismod maximus, nisi neque condimentum sapien, et congue 
+                felis erat sit amet lorem. Gravida est dui quis sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Sed eget ipsum. Vestibulum a ante nec ipsum sodales elementum ut laoreet ante. Sed hendrerit pulvinar tortor ac
+                dapibus. Curabitur efficitur dui molestie, sodales elit in, rutrum augue.
+              </p> 
+            </div>
+          </section>
+          
+          <!-- Portfolio section -->
+          <section id="portfolio">
+            <div class="section-title">
+              <h2>Work</h2>
+            </div>
+      
+            <div class="section-content">
+              <!-- Changing the entire div to a clickable link -->
+              <div class="main-project change_opacity" onclick="location.href='https://vish-opatha.github.io/horiseon-code-refactor/';" style="cursor: pointer;" >
+                <h3>Horisean Marketing</h3>
+                <h4>HTML/ CSS</h4>  
+              </div>
 
-      <div class="section-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis hendrerit. Phasellus volutpat, ligula tempor tincidunt 
-          hendrerit, dui tellus faucibus felis, rhoncus malesuada tellus velit quis odio. Ut et luctus purus. Nullam eleifend, sem id 
-          semper hendrerit, dui nibh mollis neque, quis ultricies purus neque sit amet lacus.
-        </p> 
-        <p>Donec tincidunt leo at volutpat tincidunt. Etiam sagittis, enim quis euismod maximus, nisi neque condimentum sapien, et congue 
-          felis erat sit amet lorem. Gravida est dui quis sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Sed eget ipsum. Vestibulum a ante nec ipsum sodales elementum ut laoreet ante. Sed hendrerit pulvinar tortor ac
-          dapibus. Curabitur efficitur dui molestie, sodales elit in, rutrum augue.
-        </p> 
-      </div>
-    </section>
-    
-    <!-- Portfolio section -->
-    <section id="portfolio">
-      <div class="section-title">
-        <h2>Work</h2>
-      </div>
+    </main>
+    <footer class="h-100 d-flex flex-column justify-content-center align-items-center border border-secondary">
+        <div class="border border-primary">Contact</div>
+        <div  class="border border-primary">
+            <div>
+                <p>(08) 8888 8888</p>
+                <p>vish.opatha@abc.com</p>
 
-      <div class="section-content">
-        <!-- Changing the entire div to a clickable link -->
-        <div class="main-project change_opacity" onclick="location.href='https://vish-opatha.github.io/horiseon-code-refactor/';" style="cursor: pointer;" >
-          <h3>Horisean Marketing</h3>
-          <h4>HTML/ CSS</h4>  
+            </div>
+            <!-- <p class=" d-inline">(08) 8888 8888</p>
+            <p class="d-inline">vish.opatha@abc.com</p>
+            <a href="https://github.com/vish-opatha">GitHub</a>
+            <a href="https://www.linkedin.com/">Linkedin</a> -->
         </div>
-
-        <div class="sub-project">
-          <!-- Sub project links and images are representational only -->
-          <div class="change_opacity" id="project-two" onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
-            <h3>Sample Project Two</h3>
-            <h4>HTML/ CSS/ Javascript</h4>
-          </div>
-
-          <div class="change_opacity" id="project-three" onclick="location.href='https://www.google.com/';" style="cursor: pointer;">
-            <h3>Sample Project Three</h3>
-            <h4>HTML/ CSS</h4>
-          </div>
-        </div>
-
-        <div class="sub-project">
-          <div class="change_opacity" id="project-four" onclick="location.href='https://www.google.com/';" style="cursor: pointer;" >
-            <h3>Sample Project Four</h3>
-            <h4>HTML/ CSS</h4>
-          </div>
-          <div class="change_opacity" id="project-five" onclick="location.href='https://www.google.com/';" style="cursor: pointer;" >
-            <h3>Sample Project Five</h3>
-            <h4>HTML/ CSS</h4>
-          </div>
-        </div>
-    </section>
-	
-    <!-- Contact me section -->
-	  <footer id="contact-me">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="section-content" id="footer">
-        <p>(08) 8888 8888</p>
-        <p>vish.opatha@abc.com</p>
-        <a href="https://github.com/vish-opatha">GitHub</a>
-        <a href="https://www.linkedin.com/">Linkedin</a>
-        <a href="https://www.spotify.com/au/">Spotify</a>
-      </div>
     </footer>
 
-  </main>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <footer class="d-flex">
+        <div class="flex-row mx-auto">Contact</div>
+        <div class="flex-row bd-highlight">
+            <div class="bd-highlight">(08) 8888 8888</div>
+            <div class="bd-highlight">vish.opatha@abc.com</div>
+            <div class="bd-highlight"><a href="https://github.com/vish-opatha">GitHub</a></div>
+            <div class="bd-highlight"><a href="https://www.linkedin.com/">Linkedin</a></div>
+        </div>
+    </footer> -->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
