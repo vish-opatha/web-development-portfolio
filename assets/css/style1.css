@@ -1,0 +1,15 @@
+/* Introducing custom fonts for the page*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/GentiumBasic-Regular.ttf);
+    }
+/* Styles for body with fonts and flexbox*/
+body {  
+    margin: 0;
+    padding:0;
+    width:100vw;
+    font-family:myFirstFont;
+    /* display:flex;
+    flex-direction: column; */
+    color: #13293d; /*Basic color for all the text unless amended specifically*/
+  }  

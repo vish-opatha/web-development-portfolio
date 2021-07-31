@@ -10,12 +10,12 @@
     padding:0;
     width:100vw;
     font-family:myFirstFont;
-    display:flex;
-    flex-direction: column;
+    /* display:flex;
+    flex-direction: column; */
     color: #13293d; /*Basic color for all the text unless amended specifically*/
-    }
+  }
 
-  div {
+  div { /*Take this part*/
     margin: 10px; 
     line-height: 1.5em;  
   }
