@@ -16,7 +16,8 @@ body {
 
     /* display:flex;
     flex-direction: column; */
-    color: #13293d; /*Basic color for all the text unless amended specifically*/
+    background-color: green; /*Basic color for all the text unless amended specifically*/
+    color:whitesmoke;
   }  
 
   #header{
@@ -31,4 +32,8 @@ body {
   .project-card:hover{
         opacity: 0.8;
         animation-duration: 3s;
+  }
+
+  .project-card button:hover{
+      border-color: blanchedalmond;
   }
