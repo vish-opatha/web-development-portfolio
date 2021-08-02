@@ -39,4 +39,8 @@ body {
       border-color: blanchedalmond;
   }
 
+  h1,h3,.bold{
+      font-weight: 800;
+  }
+
  
