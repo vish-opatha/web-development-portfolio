@@ -1,15 +1,34 @@
 /* Introducing custom fonts for the page*/
-@font-face {
-    font-family: myFirstFont;
-    src: url(../fonts/GentiumBasic-Regular.ttf);
-    }
+/* @font-face {
+    /* font-family: myFirstFont; */
+    /* src: url(../fonts/GentiumBasic-Regular.ttf); */
+    /* font-fBlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; */
+
+
+    
 /* Styles for body with fonts and flexbox*/
 body {  
     margin: 0;
     padding:0;
-    width:100vw;
-    font-family:myFirstFont;
+    width:100%;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
     /* display:flex;
     flex-direction: column; */
     color: #13293d; /*Basic color for all the text unless amended specifically*/
   }  
+
+  #header{
+      background-color: #13293d;
+  }
+
+  .btn-rounded
+  {
+      border-radius: 35px;
+  }
+
+  .project-card:hover{
+        opacity: 0.8;
+        animation-duration: 3s;
+  }
