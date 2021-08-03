@@ -1,10 +1,3 @@
-/* Introducing custom fonts for the page*/
-/* @font-face {
-    /* font-family: myFirstFont; */
-    /* src: url(../fonts/GentiumBasic-Regular.ttf); */
-    /* font-fBlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; */
-
-
     
 /* Styles for body with fonts and flexbox*/
 body {  
@@ -40,13 +33,22 @@ body {
   } */
 
   h1,h3,.bold{
-      font-weight: 800;
-  }
+      font-weight: 800;}
+  
+     .project-card img{
+         height:40%;
+     }
 
   .b-border
   {
       /* border-color: #3C1518; */
-      border-color: black;
+      border-bottom: #937B63 solid 0.25px;
+      /* border-color: black; */
   }
+
+  #pro1{
+    background-image: url("../images/project_2.png");
+   
+  }  
 
  
