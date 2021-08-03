@@ -35,12 +35,18 @@ body {
         animation-duration: 3s;
   }
 
-  .project-card button:hover{
+  /* .project-card button:hover{
       border-color: blanchedalmond;
-  }
+  } */
 
   h1,h3,.bold{
       font-weight: 800;
+  }
+
+  .b-border
+  {
+      /* border-color: #3C1518; */
+      border-color: black;
   }
 
  
