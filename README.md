@@ -11,10 +11,10 @@ Refer to the following links:
 
 ## Mock-up
 The following images show the appearance of the webpage.
-Desktop View
+* Desktop View
 ![Desktop View](./assets/images/mockup-desktop.png)
 
-Mobile View
+* Mobile View
 ![Responsive View](./assets/images/mockup-small.png)
 
 ## Technical Acceptance - Work Done
