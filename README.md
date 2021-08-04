@@ -13,7 +13,7 @@ Refer to the following links:
 The following images show the appearance of the webpage.
 * Desktop View
 ![Desktop View](./assets/images/mockup-desktop.png)
-
+---
 * Mobile View
 ![Responsive View](./assets/images/mockup-small.png)
 
