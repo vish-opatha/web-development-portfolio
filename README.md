@@ -11,13 +11,14 @@ Refer to the following links:
 
 ## Mock-up
 The following images show the appearance of the webpage.
-
+Desktop View
 ![Desktop View](./assets/images/mockup-desktop.png)
 
+Mobile View
 ![Responsive View](./assets/images/mockup-small.png)
 
 ## Technical Acceptance - Work Done
-1. The entire portfolio has been revamped using Bootstrap.
+1. The entire portfolio has been revamped using Bootstrap and in mobile-first design.
 2. Projects carried out so far have been included in the portfolio.
 3. Github repository has been improved according to the given instructions.
 4. Linkedin profile has been modified according to the given instructions and alo have submitted to the Career Materials Team.
